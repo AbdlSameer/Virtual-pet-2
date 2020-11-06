@@ -35,17 +35,20 @@ class food
 
     display()
     {
-        lastfeed =hour()  
-         if(lastFed>=12)
-         { 
-              text("Last Feed : "+ lastFed%12 + " PM", 50,30); 
-         }else if(lastFed==0)
-         { 
-              text("Last Feed : 12 AM",50,30); 
-         }
-         else{
-              text("Last Feed : "+ lastFed + " AM", 50,30);
-         }
+       
+    fill(255,255,254);
+    textSize(15);
+    lastfeed =hour()       
+    if(lastFed>=12)
+    {
+        text("Last Feed :"+ lastFed%12 + "PM",350,30);
+    }else if(lastFed==0)
+    {
+        text("Last Feed : 12 AM",350,30);
+    }else
+    {
+        text("Last Feed :"+lastFed + "AM", 350, 30);
+    }
 
         var x=80,y=100;
 

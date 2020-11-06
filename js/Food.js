@@ -38,7 +38,7 @@ class food
        
     fill(255,255,254);
     textSize(15);
-    lastfeed =hour() ,      
+    lastFed =hour()       
     if(lastFed>=12)
     {
         text("Last Feed :"+ lastFed%12 + "PM",350,30);
